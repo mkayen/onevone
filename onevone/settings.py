@@ -36,7 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'south'
+    'south',
+    'game'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -59,8 +60,13 @@ WSGI_APPLICATION = 'onevone.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'onevone_db'
-    }
+        'NAME': 'onevone_db',
+        'HOST': 'localhost'
+    }#,
+    #'depthcharts': {
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #    'NAME': 'depthcharts.sqlite3'
+    #}
 }
 
 # Internationalization
