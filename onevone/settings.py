@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'south',
-    'game'
+    'game',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -64,8 +64,9 @@ DATABASES = {
         'HOST': 'localhost'
     }#,
     #'depthcharts': {
-    #    'ENGINE': 'django.db.backends.sqlite3',
-    #    'NAME': 'depthcharts.sqlite3'
+    #    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #    'NAME': 'depthcharts',
+    #    'HOST': 'localhost'
     #}
 }
 
